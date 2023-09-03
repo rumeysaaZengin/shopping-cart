@@ -2,20 +2,20 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- ! font awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- !bootstrap 5 -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shopping Cart</title>
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/2331/2331970.png" type="image/x-icon">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/css/bootstrap.min.css" />
 </head>
 
 <body>
-    <!-- *header start -->
+    <!--* Header Start -->
     <header class="header-area">
         <div class="container">
             <div class="navbar">
@@ -25,107 +25,93 @@
                     </button>
                 </div>
                 <div class="navbar-middle">
-                    <div class="logo">
-                        LOGO
-                    </div>
+                    <div class="logo">LOGO</div>
                 </div>
                 <div class="navbar-right">
                     <button class="cart-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight">
                         <span class="cart-items">0</span>
-                        <i class="fas fa-cart-shopping"> </i>
+                        <i class="fas fa-cart-shopping"></i>
                     </button>
                 </div>
             </div>
         </div>
-
     </header>
-    <!-- *header end -->
+    <!--* Header End -->
 
-    <!--* banner start -->
+
+    <!--* Banner Start -->
     <div class="banner-area">
-        <div class="banner-image">
-            <img src="images/banner.png" alt="banner image">
-        </div>
-        <div class="banner-content">
-            <span class="banner-content-subtitle">INDOORS</span>
-            <span class="banner-content-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
-            <span class="banner-content-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. In beatae, animi
-                et placeat labore laboriosam inventore recusandae tempora iste quam voluptates possimus.</span>
-            <a class="banner-content-link" href="#">SEE MORE</a>
+        <div class="banner">
+            <div class="banner-image">
+                <img src="images/banner.png" alt="banner image" />
+            </div>
+            <div class="banner-content">
+                <span class="banner-content-subtitle">INDOORS</span>
+                <span class="banner-content-title">See Bamboo's New Range Of Indoor Furniture</span>
+                <span class="banner-content-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
+                    alias odio, odit doloribus dolor ducimus at voluptatem eaque
+                    corrupti consequuntur!
+                </span>
+                <a href="#" class="banner-content-link">See More</a>
+            </div>
         </div>
     </div>
-    <!-- * banner end -->
+    <!--* Banner End -->
 
-    <!--* product list start -->
+    <!--* Product List Start -->
     <div class="product-area">
         <div class="container">
             <h2 class="product-area-title">Featured Product</h2>
             <div class="row" id="products-dom">
                 <!-- <div class="col-lg-4 col-md-6">
-                    <div class="product">
-                        <div class="product-image">
-                            <img src="images/product1.png" alt="product">
-                        </div>
-                        <div class="product-hover">
-                            <span class="product-title">table</span>
-                            <span class="product-title">$300</span>
-                            <button class="btn-add-to-cart">
-                                <i class="fas fa-cart-shopping"></i>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                 -->
-
+            <div class="product">
+              <div class="product-image">
+                <img src="images/product1.png" alt="product" />
+              </div>
+              <div class="product-hover">
+                <span class="product-title"> table </span>
+                <span class="product-price"> $300 </span>
+                <button class="btn-add-to-cart">
+                  <i class="fas fa-cart-shopping"></i>
+                </button>
+              </div>
+            </div>
+          </div> -->
             </div>
         </div>
     </div>
-    <!--*product list -->
+    <!--* Product List End -->
 
-    <!-- *cart list start -->
+    <!--* Cart List Start -->
     <div class="offcanvas offcanvas-end" id="offcanvasRight">
         <div class="offcanvas-header">
-            <h5>Shopping Cart</h5>
-            <button class="btn-close" type="button" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            <h5>Shopping Card</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
-        <div class="offcanvas-body">
+        <div class="offcancas-body">
             <div class="shopping-cart">
-                <ul class="cart-list">
-                    <li class="cart-list-item">
-                        <div class="cart-left">
-                            <div class="cart-left-image">
-                                <img src="images/product1.png" alt="product" />
-                            </div>
-                            <div class="cart-left-info">
-                                <a class="cart-left-info-title" href="#">table</a>
-                                <span class="cart-left-info-price">$300</span>
-                            </div>
-                        </div>
-                        <div class="cart-right">
-                            <div class="cart-right-quantity">
-                                <button class="quantity-minus">
-                                    <i class="fas fa-minus"></i>
-                                </button>
-                                <span class="quantity">0</span>
-                                <button class="quantity-plus">
-                                    <i class="fas fa-plus"></i>
-                                </button>
-                            </div>
-                            <div class="cart-right-remove">
-                                <button class="cart-remove-btn">
-                                    <i class="fas fa-trash"></i>
-                                </button>
-                                <span></span>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
+                <ul class="cart-list"></ul>
+                <div class="shopping-cart-bottom">
+                    <div class="total">
+                        <div class="total-title">Subtotal:</div>
+                        <span class="total-value">$0</span>
+                    </div>
+                    <button class="btn-clear" type="button">Clear</button>
+                </div>
             </div>
         </div>
     </div>
+    <!--* Cart List End -->
 
-    <!--! bootstrap5 js cdn -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!--* bootstrap5 js cdn  -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+        crossorigin="anonymous"></script>
+    <!--* script -->
     <script src="script.js"></script>
 </body>
 
